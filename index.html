@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VITASTE | Welcome</title>
+    <meta
+      name="description"
+      content="VITASTE helps people understand nutrition, make informed food choices, and follow personal health goals."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container hero-inner">
+        <div>
+          <nav class="top-nav" aria-label="Primary">
+            <a href="#welcome-message">Welcome</a>
+            <a href="#mission-vision">Goal</a>
+            <a href="#about-creator">Creator</a>
+            <a href="#app-screenshots">Screenshots</a>
+            <a href="#why-vitaste">Impact</a>
+          </nav>
+          <p class="eyebrow">Welcome to VITASTE</p>
+          <h1>Nutrition support for real life</h1>
+          <p class="founder-line">Created by Angela Li — creator of VITASTE</p>
+          <p class="subtitle">
+            VITASTE helps people understand food and make healthier choices.
+          </p>
+          <p class="quick-mission">
+            For athletes, students, and anyone building healthier habits.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#welcome-message">Explore VITASTE →</a>
+            <a class="button ghost" href="#about-creator">About the Creator</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <h2>VITASTE Color System</h2>
+          <ul class="legend">
+            <li><span class="chip hydration">Hydration • Blue</span></li>
+            <li><span class="chip meals">Meals & Food • Green</span></li>
+            <li><span class="chip sleep">Sleep Mode (Optional) • Purple</span></li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <main class="sections">
+      <section class="band band-alt" id="welcome-message-band">
+        <div class="container">
+      <section id="welcome-message">
+        <h2>Welcome to VITASTE</h2>
+        <p>
+          We’re excited to have you here.
+        </p>
+        <p>
+          VITASTE started for athletes, then expanded for everyone.
+        </p>
+        <p>
+          It supports daily nutrition decisions, including diabetes-friendly goals.
+        </p>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-meals">
+        <div class="container">
+      <section id="mission-vision">
+        <h2>Our Goal</h2>
+        <div class="grid two">
+          <article>
+            <h3>Simple & Accessible Nutrition</h3>
+            <p>
+              Clear nutrition information for everyday decisions.
+            </p>
+          </article>
+          <article>
+            <h3>Personal, Not One-Size-Fits-All</h3>
+            <p>
+              Personal guidance that fits each user’s routine and goals.
+            </p>
+          </article>
+        </div>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-alt">
+        <div class="container">
+      <section class="split" id="about-creator">
+        <div>
+          <h2>About the Creator</h2>
+          <p>
+            Hi, I’m <strong>Angela Li</strong>, the founder and creator of
+            <strong>VITASTE</strong>.
+            I built VITASTE because I believe health guidance should feel personal,
+            practical, and encouraging — not confusing or overwhelming.
+          </p>
+          <p>
+            VITASTE began as an idea to support athletes with better nutrition awareness.
+            As I continued developing the app, I realized the same support is valuable
+            for many people: students, families, people building healthier routines,
+            and people managing conditions like diabetes.
+          </p>
+          <p>
+            My goal is to create tools that help users make informed decisions in
+            everyday life. I care deeply about turning complex nutrition information
+            into simple, actionable guidance people can actually use.
+          </p>
+          <p>
+            I’m passionate about combining technology and wellness in a way that is
+            inclusive and human-centered. Through VITASTE, I hope to help more people
+            feel confident, supported, and empowered in their health journey.
+          </p>
+          <p>
+            Thank you for being part of the VITASTE journey. If you have questions,
+            please contact me using the email at the bottom of this page.
+          </p>
+        </div>
+        <figure class="logo-card">
+          <img src="assets/vitaste-logo.jpg" alt="VITASTE logo: apple shape with colorful lens-style segments and leaf icon" />
+          <figcaption>
+            The VITASTE logo combines an apple, a camera-lens shape, and leaf elements
+            to symbolize smart health, growth, and positive change.
+          </figcaption>
+        </figure>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-hydration">
+        <div class="container">
+      <section id="goal">
+        <h2>How VITASTE Helps</h2>
+        <p>
+          VITASTE combines food scanning and simple guidance to build healthy habits.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Understand food choices</span>
+          <span class="pill">Support daily healthy habits</span>
+          <span class="pill">Optional nutrition estimation</span>
+          <span class="pill sleep">Optional sleep mode support</span>
+        </div>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-hydration">
+        <div class="container">
+      <section id="app-details">
+        <h2>Flutter App: What It Does</h2>
+        <div class="grid two">
+          <article>
+            <h3>Connection & Capture</h3>
+            <ul>
+              <li>Scans for the BLE device and connects to camera service UUIDs.</li>
+              <li>Sends <code>READY</code> to start capture flow.</li>
+              <li>Uses <code>SHOOT</code> to request a fresh image on demand.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Reliable Transfer</h3>
+            <ul>
+              <li>Reassembles chunked JPEG data with index validation.</li>
+              <li>ACKs transfer windows to recover dropped packets.</li>
+              <li>Shows transfer stats (size, elapsed time, throughput).</li>
+            </ul>
+          </article>
+          <article>
+            <h3>History & Review</h3>
+            <ul>
+              <li>Keeps recent images in memory with newest-first ordering.</li>
+              <li>Supports thumbnails and full-screen photo view.</li>
+              <li>Lets users retry failed descriptions from the UI.</li>
+            </ul>
+          </article>
+          <article class="meals-accent">
+            <h3>AI Nutrition Layer (Optional)</h3>
+            <ul>
+              <li>When API key exists, sends image to model for nutrition summary.</li>
+              <li>Formats results into simple nutrition metrics.</li>
+              <li>Can send results back to board display as text chunks.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-alt">
+        <div class="container">
+      <section id="system-overview">
+        <h2>How VITASTE Works</h2>
+        <p>Simple flow from photo capture to health guidance:</p>
+        <div class="how-grid">
+          <article class="how-card hydration-line">
+            <span class="how-num">1</span>
+            <h3>Capture</h3>
+            <p>ESP32-S3 takes a food photo.</p>
+          </article>
+          <article class="how-card hydration-line">
+            <span class="how-num">2</span>
+            <h3>Send</h3>
+            <p>Image transfers to the app over BLE.</p>
+          </article>
+          <article class="how-card meals-line">
+            <span class="how-num">3</span>
+            <h3>Analyze</h3>
+            <p>App generates nutrition insights (optional AI).</p>
+          </article>
+          <article class="how-card meals-line">
+            <span class="how-num">4</span>
+            <h3>Guide</h3>
+            <p>User gets practical next-step guidance.</p>
+          </article>
+        </div>
+        <div class="how-note">
+          <strong>Optional:</strong> Sleep Mode can reduce activity for lower power use.
+        </div>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-hydration">
+        <div class="container">
+      <section id="app-screenshots">
+        <h2>NutriLens App Screenshots (iOS Simulator)</h2>
+        <p>
+          Real app screens from NutriLens on iPhone Simulator.
+        </p>
+        <div class="shots">
+          <figure>
+            <img src="assets/nutrilens/home.png" alt="NutriLens home screen" />
+            <figcaption>Home</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/nutrilens/meals.png" alt="NutriLens meals screen" />
+            <figcaption>Meals</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/nutrilens/schedule.png" alt="NutriLens schedule screen" />
+            <figcaption>Schedule</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/nutrilens/lens.png" alt="NutriLens lens capture screen" />
+            <figcaption>Lens</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/nutrilens/profile.png" alt="NutriLens profile screen" />
+            <figcaption>Profile</figcaption>
+          </figure>
+        </div>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-meals">
+        <div class="container">
+      <section>
+        <h2>Protocol Details</h2>
+        <div class="protocol-grid">
+          <p><code>IMGH</code> + total + chunk_count + payload_size</p>
+          <p><code>chunk</code> = uint16 index + JPEG bytes</p>
+          <p><code>IMGE</code> + total confirms transfer footer</p>
+          <p><code>0x01</code> ACK window / retransmit control</p>
+          <p><code>0x02</code> SHOOT request</p>
+          <p><code>0x03</code> READY handshake</p>
+          <p><code>0x04/0x05/0x06</code> description stream</p>
+          <p><code>0x07</code> short error message (OLED variant)</p>
+        </div>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-sleep">
+        <div class="container">
+      <section id="sleep-mode">
+        <h2>Sleep Mode (Optional Feature)</h2>
+        <p>
+          Sleep mode is optional and helps reduce activity when needed.
+        </p>
+        <ul>
+          <li>Pause automatic behaviors.</li>
+          <li>Lower BLE activity.</li>
+          <li>Turn on/off based on user preference.</li>
+        </ul>
+      </section>
+        </div>
+      </section>
+
+      <section class="band band-alt">
+        <div class="container">
+      <section id="why-vitaste">
+        <h2>Why VITASTE Matters</h2>
+        <p>
+          VITASTE turns nutrition data into practical daily support.
+        </p>
+        <ul>
+          <li>Personalized plans that fit real routines and real goals.</li>
+          <li>Simple and practical health insights.</li>
+          <li>Inclusive support, including diabetes-focused habits.</li>
+        </ul>
+      </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>Contact: your-email@example.com • Created by Angela Li • Thank you for visiting VITASTE.</p>
+      </div>
+    </footer>
+  </body>
+</html>
